@@ -1,0 +1,87 @@
+//@@代表引用
+//@a:c;
+//@b:a;
+//@@b;    c
+@font-face{
+  font-family:'demo';
+  src: url('../font/iconfont.eot'); /* IE9*/
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+@name1:zlk;
+@name2:message;
+@name3:yumao;
+@name4:shezhi;
+@name5:fangdajing;
+@name6:book;
+@name7:daohang;
+@name8:she;
+@name9:jianpan;
+@name10:puke;
+@name11:yinyue;
+@name12:rili;
+@name13:tianmao;
+@name14:jisuanqi;
+@name15:xiaomi;
+@name16:wuziqi;
+
+
+
+
+@con1:f00ca;
+@con2:e6f5;
+@con3:f00f5;
+@con4:f0015;
+@con5:e62a;
+@con6:e69b;
+@con7:e608;
+@con8:e600;
+@con9:e601;
+@con10:e60a;
+@con11:e603;
+@con12:e604;
+@con13:e605;
+@con14:e606;
+@con15:e607;
+@con16:e609;
+
+
+
+.for(@i:1)when(@i<=16){
+  @n:"name@{i}";
+  @n1:@@n;
+  @c:"con@{i}";
+  @c1:@@c;
+  *[data-icon=@{n1}]:before{
+    content:'\@{c1}';
+    font-family:demo;
+  }
+  *[data-icon=@{n1}][icon-pos=top]:before{
+    display: block;
+    content:'\@{c1}';
+    font-family:demo;
+  }
+  *[data-icon=@{n1}][icon-pos=right]:before{
+    content:'';
+    font-family:demo;
+  }
+  *[data-icon=@{n1}][icon-pos=right]:after{
+    content:'\@{c1}';
+    font-family:demo;
+  }
+  *[data-icon=@{n1}][icon-pos=bottom]:before{
+    content:'';
+    font-family:demo;
+    display: block;
+  }
+  *[data-icon=@{n1}][icon-pos=bottom]:after{
+    content:'\@{c1}';
+    font-family:demo;
+    display: block;
+  }
+  .for(@i+1);
+}
+.for();
+

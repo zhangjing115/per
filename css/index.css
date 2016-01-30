@@ -1,0 +1,756 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial';
+    /*background: #E0F7F6;*/
+    background: #232323;
+}
+.clear{
+    clear:both;
+}
+::selection {
+    background-color: #003e5f;
+    color: #fff;
+}
+
+/*===========================这是头部==========================*/
+.content{
+    /*background: url(../img/slider.jpg) no-repeat;*/
+    background: url(../img/header-bg.jpg) no-repeat;
+
+    background-size: cover;
+    background-position: center;
+    height:400px;
+}
+.info{
+    width:80%;
+    margin:400px auto 0;
+}
+.title{
+    text-align: center;
+    padding:20px 0;
+    color:black;
+    font-weight:100;
+    font-size: 55px;
+    font-family: 'Rouge Script', cursive;
+    text-align: center;
+    display: block;
+    margin-top:150px;
+}
+.dream{
+    font-size: 27px;
+    text-align: center;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 56px;
+    word-spacing: 2px;
+    /*text-shadow: 2px 2px #F8F8F8;*/
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-top:-10px;
+}
+.btn-hire {
+    width:15%;
+    text-align: center;
+    border-radius: 6px;
+    border: 2px solid black;
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 1px 0 rgba(20, 20, 26, 0.55);
+    background-color: rgba(247, 255, 248, 0);
+    padding: 15px 20px;
+    margin:0 auto;
+}
+.btn{
+    /*background:rgba(255,255,255,0.8) ;*/
+    transition: 0.4s background linear;
+}
+
+.btn a{
+    color:black;
+    font-weight: bold;
+}
+.btn:hover{
+    background:rgba(0,0,0,0.8);
+
+}
+.btn:hover a{
+    color:white;
+}
+header{
+    /*width:80%;*/
+    margin:0 auto;
+}
+.header1{
+    padding:5px 30px;
+    background:rgba(0,0,0,0.5);
+
+}
+.logo {
+    float: left;
+    text-align: center;
+}
+.logo h1 a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.h_menu {
+    float: right;
+}
+.flexy-menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    float: left;
+    list-style: none;
+}
+.flexy-menu li.right {
+    float: right;
+}
+.flexy-menu>li>a {
+    display: block;
+    color: #FFF;
+    padding: 12px 30px 12px 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.flexy-menu>li>a:hover{
+    color:#55C1E5;
+}
+.logo1{
+    display: none;
+}
+.logo1>h1{
+    padding-top:20px;
+    text-align: center;
+    color:black;
+}
+.header2{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    color: #dedede;
+    line-height: 40px;
+    background:rgba(0,0,0,0.5);
+    position: relative;
+    /*display: none;*/
+}
+.menubtn{
+    color:white;
+    text-align: left;
+
+}
+.header2 .son{
+    width:100%;
+    background:#eee;
+    position: absolute;
+    right:0;
+    top:40px;
+}
+
+.son a{
+    display: block;
+    color:#303030;
+    padding:0px 50px;
+    border-bottom: 1px solid #D8D8D8;
+}
+/*=================================简介==================*/
+.jianjie{
+    padding-top:10px;
+    background: #002E5A;
+    margin-top:20px;
+    position: relative;
+    border-image-source:url("../img/biankuang.png");
+    border-image-slice:10%;
+    border-image-width:30px;
+    border-image-outset:25px;
+    border-image-repeat:round;
+}
+.about{
+    padding:20px 0;
+    font-family:'Milonga', cursive ;
+    color: #fff;
+    font-weight: 400;
+    font-size: 40px;
+    word-spacing: 5px;
+    text-align: center;
+}
+.jianjie>.con>.container-fluid > .row >div[class*=col]{
+    height:300px;
+}
+.jianjie-con{
+    width:60%;
+    height:100%;
+    margin:0 auto;
+
+}
+.jianjie p{
+    color:white;
+    line-height: 14px;
+    font-size: 14px;
+    text-align: center;
+
+}
+/*==============================icon==================*/
+
+#win{
+    width:80%;
+    margin:0 auto;
+    height:250px;
+    overflow: hidden;
+}
+#box{
+    width:400%;
+    height:150px;
+}
+#box>.container-fluid>.row>.list{
+    width:25%;
+    float: left;
+}
+
+.list>.container-fluid{
+    height:100%;
+}
+.list>.container-fluid>.row{
+    height:100%;
+}
+.list>.container-fluid>.row>div[class*=col]{
+    height:100%;
+    float: left;
+}
+.list-son img{
+    display: block;
+    width:100%;
+    height:auto;
+    margin:-18px auto;
+}
+
+
+/*===============================ai=========================*/
+.ai{
+    position: relative;
+}
+.ai>.container-fluid>.row>div[class*=col]{
+    height:300px;
+    position: relative;
+}
+.img-responsive{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.textbox{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.textbox:hover{
+    transition: all 1s ease;
+    background-color: rgba(0, 0,0, 0.6);
+    box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+}
+.textbox img{
+    position: absolute;
+    top:40%;
+    left:45%;
+    display: none;
+}
+.imgbox{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+    background:rgba(0,0,0,0.7);
+    display: none;
+    border:30px solid white;
+}
+.imgda{
+    width:70%;
+    height:auto;
+    margin:110px auto;
+    display: none;
+}
+.close{
+    width:60px;
+    height:60px;
+    position: absolute;
+    top:50px;
+    right:45%;
+    background: url("../img/close1.png") no-repeat;
+    background-size: cover;
+}
+/*======================================app=======================*/
+
+.out{
+    height:180px;
+    overflow: hidden;
+}
+.out>.row{
+    height:100%;
+}
+.out>.row>div{
+    height:100%;
+    overflow: hidden;
+    /*border:1px solid red;*/
+}
+.container-fluid>.row{
+    height:100%;
+
+}
+.inner{
+    height:100%;
+}
+.inner>.row{
+    height:100%;
+}
+
+.app-son{
+    width:50%;
+    height:50%;
+    float: left;
+    overflow: hidden;
+    /*border:1px solid red;*/
+}
+.app-son img{
+    background-size: cover;
+}
+.inner>.row>div{
+    height:50%;
+    overflow: hidden;
+    /*border:1px solid red;*/
+}
+.app-pic{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.img1{
+    position: relative;
+}
+.mask{
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height:100%;
+    opacity:0.6;
+    cursor:pointer;
+    -webkit-transition-duration: 1s;
+}
+.img1 #mask-1 {
+    position: absolute;
+    width:50%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.img1 #mask-2{
+    position: absolute;
+    top:0;
+    right:0;
+    width:50%;
+    height:100%;
+    margin-left:50%;
+}
+.img1:hover #mask-1{
+    width:0%;
+}
+.img1:hover #mask-2{
+    margin-left:100%;
+    transform-origin: right;
+    width:0%;
+}
+.img2{
+    position: relative;
+}
+.img2 #mark-3{
+    width:100%;
+    height:100%;
+}
+.img3 #mark-4{
+    width:100%;
+    height:100%;
+}
+.mark1{
+    width:100%;
+    height:100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:0.6;
+    cursor:pointer;
+    -webkit-transition-duration: 1s;
+}
+.img2:hover #mask-3{
+    height:0;
+}
+.img3{
+    position: relative;
+}
+.img3:hover #mask-4{
+    height:0;
+}
+.img4{
+    position: relative;
+}
+.img4:hover .mask-5{
+    height:0%;
+    /*margin-top:50%;*/
+}
+.img5{
+    position:relative;
+}
+.img5:hover .mask-6{
+    margin-left:50%;
+    margin-top:35%;
+    height:0%;
+    width:0%;
+}
+
+/*===========================游戏====================*/
+.block_title{
+    height:133px;
+    text-align: center;
+    padding:20px 0;
+    color:rgb(127, 255, 255);
+    font-weight: 400;
+    font-size:35px;
+    font-family: 'Milonga', cursive;
+
+    line-height: 133px;
+}
+.game{
+    width:95%;
+    margin:0 auto;
+}
+.img-game{
+    width:100%;
+    /*height:auto;*/
+    height:300px;
+    vertical-align: middle;
+    transition:transform 0.3s ease;
+    /*position: relative;*/
+}
+.game figure{
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow: hidden;
+    margin: 0;
+    margin-bottom:30px;
+    color:white;
+}
+.game>.container-fluid>.row>div[class*=col]{
+    height:300px;
+    overflow: hidden;
+    margin-bottom:80px;
+}
+.show{
+    width:100%;
+    padding:15px;
+    text-align: center;
+    /*left:auto;*/
+    /*top:0px;*/
+    background: black;
+    /*opacity: 0;*/
+    /*transition: transform 0.2s ease, opacity 0.2s 0.3s;*/
+    transition:transform 0.3s ease;
+
+}
+
+/*========================web==============================*/
+
+.banner{
+    height:250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner .b-img{
+    width:100%;
+    height:100%;
+}
+.banner #img1{
+    background: url("../img/xiaomi.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+.banner #img2{
+    background: url("../img/tiaomao.png");
+    background-size: cover;
+    background-position: center center;
+
+}
+.banner #img4{
+    background: url("../img/apple.jpg");
+    background-size: cover;
+    background-position: center center;
+
+}
+.banner #img3{
+    background: url("../img/github.png") no-repeat;
+    background-size:cover;
+    background-position: center center;
+
+}
+.banner #img6{
+    background: url("../img/zhenzhan.png");
+    background-size: cover;
+    background-position: center center;
+
+}
+.banner #img5{
+    background: url("../img/xinwen.jpg");
+    background-size: cover;
+    background-position: center center;
+
+}
+.banner #img7{
+    background: url("../img/xiaomi.jpg");
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.b-box{
+    width:700%;
+    height:100%;
+
+
+}
+.b-box:after,.b-box:before{
+    content: "";
+    display: block;
+}
+.b-box:after{
+    clear:both;
+}
+.block{
+    width:14.2857%;
+    height:100%;
+    display: block;
+    text-decoration: none;
+    color:#000;
+    float: left;
+
+    /*border: 1px solid black;*/
+}
+
+.circ{
+    width:200px;
+    height:20px;
+    margin:0 auto;
+    position: absolute;
+    right:0;
+    bottom:10px;
+    margin:auto;
+}
+.circle{
+    width:20px;
+    height:20px;
+    background:#000;
+    float:left;
+    margin-left:10px;
+    cursor: pointer;
+    border:2px solid #999999;
+    color: #999999;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+/*=====================================联系=============================*/
+
+footer{
+    padding:20px 0;
+    background: black;
+    position: relative;
+}
+.footer-con{
+    width:50%;
+    margin:0 auto;
+}
+.xinxi{
+    padding:10px;
+    /*margin-left:20px;*/
+}
+.xinxi img{
+    width:100%;
+    height:auto;
+}
+.tel{
+    color:white;
+    text-align:left;
+    font-size: 16px;
+    padding-left: 10%;
+    /*float: right;*/
+}
+#top{
+    width:55px;
+    height:55px;
+    background: red;
+    position: absolute;
+    bottom:0;
+    right:0;
+    background: url("../img/top1.png") no-repeat;
+    background-size: cover;
+}
+@media screen and (min-width:730px){
+    .content{
+        height:400px;
+    }
+    .info{
+        margin:-190px auto 0;
+    }
+    .title{
+        padding:20px 0;
+        font-weight:100;
+        font-size: 45px;
+        margin-top:300px;
+        color: #FF8900;
+    }
+    .dream{
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 30px;
+        margin-top:-10px;
+        color:#FF8900;
+    }
+    .btn-hire {
+        width:20%;
+        font-weight: 400;
+        padding: 10px 20px;
+        margin:0 auto;
+    }
+    .ai>.container-fluid>.row>div[class*=col]{
+        height:300px;
+        position: relative;
+    }
+
+    .textbox img{
+        position: absolute;
+        top:40%;
+        left:40%;
+        display: none;
+    }
+
+    .jianjie p{
+        line-height: 12px;
+        font-size: 12px;
+        text-align:left;
+
+    }
+    .block_title{
+        /*height:96px;*/
+        font-size: 55px;
+    }
+    #win{
+        height:290px;
+    }
+    .out{
+        height:310px;
+    }
+    .app-pic {
+        height:auto;
+    }
+
+    .jianjie>.con>.container-fluid > .row >div[class*=col]{
+        height:200px;
+    }
+    .banner{
+        height:400px;
+    }
+    .close {
+        width: 100px;
+        height: 100px;
+    }
+
+}
+@media screen and (min-width:1070px) {
+    .block_title{
+        /*height:96px;*/
+        font-size: 55px;
+    }
+    .content{
+        height:660px;
+    }
+    .info{
+        margin:300px auto 0;
+    }
+    .title{
+        padding:20px 0;
+        font-weight:100;
+        font-size: 55px;
+        margin-top:190px;
+    }
+    .dream{
+        font-size: 27px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-top:-10px;
+    }
+    .btn-hire {
+        width:15%;
+        font-weight: 400;
+        padding: 15px 20px;
+        margin:0 auto;
+    }
+    #win{
+        height:380px;
+    }
+    .jianjie p{
+        line-height: 16px;
+        font-size: 16px;
+        text-align:left;
+
+    }
+    .jianjie>.con>.container-fluid > .row >div[class*=col]{
+        height:180px;
+    }
+    .ai>.container-fluid>.row>div[class*=col]{
+        height:320px;
+        position: relative;
+    }
+    .out{
+        height:600px;
+    }
+    .app-pic {
+        height:auto;
+    }
+    .img4:hover .mask-5{
+        margin-top:50%;
+    }
+
+    .img5:hover .mask-6{
+        margin-left:50%;
+        margin-top:50%;
+    }
+    .banner .b-img{
+
+        background-size: 300px;
+    }
+    .banner{
+        height:500px;
+    }
+    .close {
+        width: 100px;
+        height: 100px;
+    }
+    .imgda{
+        width:50%;
+
+    }
+
+
+
+}
